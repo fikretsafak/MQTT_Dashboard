@@ -17,8 +17,8 @@ const dashboardRouter = require("./routes/dashboard");
 app.get("/mqttConnDetails", (req, res) => {
   res.send(
     JSON.stringify({
-      mqttServer: process.env.MQTT_BROKER,
-      mqttTopic: process.env.MQTT_TOPIC,
+      mqttServer: MQTT_BROKER,
+      mqttTopic: MQTT_TOPIC,
     })
   );
 });
